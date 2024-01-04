@@ -600,7 +600,9 @@ margin-bottom: 16px;
   .modal-form-wrapper {
     margin-bottom: 8px;
   }
-
+  .modal-form-textarea {
+    margin-bottom: 16px;
+  }
   .form-label {
     display: block;
     margin-bottom: 4px;
