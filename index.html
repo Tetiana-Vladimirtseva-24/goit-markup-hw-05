@@ -387,21 +387,21 @@
   <div class="backdrop is-open">
     <div class="modal">
          <button class="modal-btn" type="button" aria-label="modal close button">
-           <svg class="modal-btn-icon" width="24" height="24">
+           <svg class="modal-btn-icon" width="8" height="8">
            <use href="./images/icons.svg#icon-close-black"></use>
            </svg>
       </button>
           <p class="modal-caption">Leave your contacts and we will call you back</p>
       <form class="modal-form" name="modal">
         <div class="modal-form-wrapper">
-           <label class="form-label" for="user_name">Name</label>
+           <label class="form-label" for="user-name">Name</label>
             <div class="form-field">
               <input 
                class="form-input"
-               id="user_name" 
-               name="user_name"
+               id="user-name" 
+               name="user-name"
                type="text">
-              <svg class="form-icon" width="18" height="18">
+              <svg class="form-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
         </div>
@@ -414,7 +414,7 @@
              id="user_tel" 
              name="user_tel"
              type="text">
-             <svg class="form-icon" width="18" height="18">
+             <svg class="form-icon" width="18" height="24">
              <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
          </div>
@@ -427,35 +427,39 @@
             id="user_email"
             name="user_email"
             type="text">
-            <svg class="form-icon" width="18" height="18">
+            <svg class="form-icon" width="18" height="24">
             <use href="./images/icons.svg#icon-email-black"></use>
            </svg>
         </div>
       </div>
       <div class="modal-form-wrapper">
-        <label class="form-label" for="user_message" name="">Comment</label>
+        <label class="form-label" for="user_comment" name="user_comment">Comment</label>
         <textarea 
         class="form-message"
-        id="user_message"
+        id="user_comment"
         name="user_message"
         rows="7"
         placeholder="Text input"></textarea>
       </div>
 
-        <label class="form-agreement">
-           <input 
-           class="checkbox visually-hidden"
-           type="checkbox" 
-           name="user_agreement"
-           value="false">
+      <div class="box-for-checkbox-label">
+               <input 
+                class="checkbox visually-hidden"
+                id="user-privacy"
+                type="checkbox" 
+                name="user_privacy"
+                value="true">
+          <label class="form-agreement" for="user-privacy">
            <span class="form-agreement-checkbox">
                <svg class="form-agreement-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-vector"></use>
               </svg>
           </span>
+
             I accept the terms and conditions of the 
-          <a class="form-agreement-link" href="">Privacy Policy</a>
-       </label>
+            <a class="form-agreement-link" href="">Privacy Policy</a>
+          </label>
+      </div>
        <button class="form-btn" type="submit">Send</button>
       </form>
 
