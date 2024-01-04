@@ -393,6 +393,7 @@ img {
     background-color:#2E2F42;
     padding: 100px 0;
 }
+
 .logo-web-footer {
     color: var(--IRIS, #4D5AE5);
     font-family: "Raleway", sans-serif;
@@ -427,14 +428,13 @@ img {
  }
  
  .social-media-footer {
+    
     color: #FFF;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
 margin-bottom: 16px;
-width: 96px;
-height: 24px;
  }
  .pages-social-icons-footer {
     display: flex;
@@ -455,6 +455,58 @@ height: 24px;
  }
  .fill-icon {
     fill: #F4F4FD;
+ }
+.footer-subscribe {
+    margin-left: 80px;
+}
+ .subscribe {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+ }
+ .form-footer {
+    display: flex;
+    gap: 24px;
+ }
+ .footer-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent; 
+    line-height: 2;
+    letter-spacing: 0.04em;
+    font-size: 12px;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+ }
+ ::placeholder {
+    color: #ffffff;
+ }
+ .footer-button {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background-color: #4D5AE5 ;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+ }
+ .icon-subscribe {
+    margin-left: 16px;
  }
  /* Modal window */
   .backdrop {
@@ -652,7 +704,7 @@ user-select: none;
     border: none;
     fill: #F4F4FD; 
 }
-.checkbox:checked + .form-agreement > .form-agreement-checkbox {
+.checkbox:checked + .form-agreement > .form-agreement-checkbox > .form-agreement-icon {
     opacity: 1;
 }
 .form-agreement-icon {
